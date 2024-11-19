@@ -1,7 +1,25 @@
 /*******************************/
 /* CODE VOOR HET EERSTE BLOKJE */
 /*******************************/
+@font-face {
+    font-family: "myst";
+    src: url(../fonts/BlackHan.ttf);
+}
 
+li:nth-child(1) {
+    background-color: grey;
+    display: grid;
+    place-items: center;
+}
+
+li:nth-child(1) h2 {
+    font-family: "myst";
+    font-size: 3.5em;
+    color: grey;
+    text-shadow: .2em .2em .2em black;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 
 
@@ -9,16 +27,104 @@
 /*******************************/
 /* CODE VOOR HET TWEEDE BLOKJE */
 /*******************************/
+@font-face {
+    font-family: "ubuntu";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}
 
+:root {
+    --pink: pink;
+    --purple: #cec2eb;
+}
 
+li:nth-child(2) {
+    background: 
+        linear-gradient(
+            var(--purple),
+            var(--pink)
+        );  
+    display: grid;
+    place-content: center;
+    grid-auto-columns:min-content;
+}
 
+li:nth-child(2) h2 {
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    color: white;
+    background-color: black;
+    padding: 1.2em .3em;
+
+    box-shadow: 
+        0 0 0 .3em white,
+        0 0 0 .6em purple
+    ;
+}
 
 
 /******************************/
 /* CODE VOOR HET DERDE BLOKJE */
 /******************************/
+@font-face {
+    font-family: "coiny";
+    src: url(../fonts/Coiny.ttf);
+}
+:root {
+    --white: white;
+    --lichtb: rgb(1, 158, 210);
+    --donkb: blue;
+    --geel: rgb(255, 225, 0);
+    --donkg: rgb(255, 183, 0);
+    --roze: pink;
+    --donkr: rgb(255, 109, 133);
+}
 
+li:nth-child(3) {   
+    display: grid;
+    place-items: centers;
 
+    background-image: 
+    repeating-conic-gradient(
+        from 3deg at 50% 75%,
+        var(--white) 0deg 6deg,
+        var(--lichtb) 6deg 21deg,
+        var(--donkb) 21deg 24deg,
+        var(--white) 24deg 36deg,
+        var(--geel) 36deg 51deg,
+        var(--donkg) 51deg 54deg,
+        var(--white) 54deg 60deg
+    );
+}
+li:nth-child(3) h2 {
+    position: absolute;
+    top: 75%;
+    translate:.75em calc(-50% - .25em);
+
+    display: grid;
+    grid-template-columns: min-content;
+    margin:0;
+    padding:.25em .75em;
+    
+    font-family: "coiny";
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: .8em;
+    text-align: center;
+    color: var(--white);
+    text-shadow:
+    .05em .05em 0 var(--donkr),
+    .1em .1em 0 var(--donkr),
+    .15em .15em 0 var(--donkr),
+    .2em .2em 0 var(--donkr),
+    .25em .25em 0 var(--donkr);
+
+    background: var(--roze);
+    box-shadow: .25em .25em 0 var(--donkr);
+    border-radius: 1em;
+}
 
 
 
@@ -26,6 +132,24 @@
 /* CODE VOOR HET VIERDE BLOKJE */
 /******************************/
 
+li:nth-of-type(4) {
+    background-color: black;
+    padding:1em 1.25em;
+}
+
+li:nth-of-type(4) h2 {
+    font-family: courier, monospace;
+    font-weight: 400;
+    font-size: 1.25em;
+    display: inline;
+    line-height: 1.5em;
+    padding: 0 .25em;
+    background: yellow;
+    color: black;
+
+    -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 
 
 
@@ -33,12 +157,51 @@
 /******************************/
 /* CODE VOOR HET VIJFDE BLOKJE */
 /******************************/
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/Poppins-Bold.ttf) format(truetype);
+}
 
+li:nth-of-type(5){
+    display: grid;
+    place-content: center;
 
+    background-image: url(../images/hello.png);
+    background-size: cover;
+}
 
+li:nth-of-type(5) h2 {
 
+    font-family: "poppins";
+    font-size: 3.5em;
+    text-transform: uppercase;
+    background-image: 
+    linear-gradient(
+        to right,
+        rgb(0 230 230),
+        rgb(51 0 102)
+        );
+    background-clip:text;
+    color: transparent;
+
+}
 
 /******************************/
 /* CODE VOOR HET ZESDE BLOKJE */
 /******************************/
+@font-face {
+    font-family: "archivo";
+    src: url(../fonts/Archivo-SemiBold.ttf) format(truetype);
+}
 
+li:nth-of-type(6) {
+    display: grid;
+    place-content: center;
+}
+li:nth-of-type(6) h2 {
+    font-family: "archivo";
+    font-size: 8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0;
+}
